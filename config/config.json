@@ -1,0 +1,8 @@
+{
+  "authentication": {
+    "strategies": ["jwt", "twitter"],
+    "oauth": {
+      "allowUserSignIn": true
+    }
+  }
+}

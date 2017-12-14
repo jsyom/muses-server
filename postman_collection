@@ -1,0 +1,130 @@
+{
+	"id": "aee30fac-fe31-446f-6e04-a223601d65b1",
+	"name": "muses",
+	"description": "",
+	"order": [],
+	"folders": [
+		{
+			"name": "Authentication",
+			"description": "",
+			"collectionId": "aee30fac-fe31-446f-6e04-a223601d65b1",
+			"order": [
+				"a0031ac8-7922-b2cd-bd92-6cee23a8aff2",
+				"53dc11f9-c364-9c3d-40c2-0e0763376520",
+				"ae43d660-e6c2-7a4d-237c-72044218ac4c"
+			],
+			"owner": "1221218",
+			"folders_order": [],
+			"id": "4bb22d96-eeca-225f-6c96-64ef5bf58691"
+		}
+	],
+	"folders_order": [
+		"4bb22d96-eeca-225f-6c96-64ef5bf58691"
+	],
+	"timestamp": 1510116157066,
+	"owner": "1221218",
+	"public": false,
+	"requests": [
+		{
+			"id": "53dc11f9-c364-9c3d-40c2-0e0763376520",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:3000/api/users",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "aee30fac-fe31-446f-6e04-a223601d65b1",
+			"data": null,
+			"dataMode": "params",
+			"name": "http://localhost:3000/api/users",
+			"description": "Request without AuthHeader",
+			"descriptionFormat": "html",
+			"time": 1510173451770,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "4bb22d96-eeca-225f-6c96-64ef5bf58691"
+		},
+		{
+			"id": "a0031ac8-7922-b2cd-bd92-6cee23a8aff2",
+			"headers": "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImdvZEBnb2QuY29tIiwiaWF0IjoxNTEwMTczMTY2fQ.lF3wgVBl4imw7xUo7gvYml1MeAeZEbsyPCa0RLZX6es\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImdvZEBnb2QuY29tIiwiaWF0IjoxNTEwMTczMTY2fQ.lF3wgVBl4imw7xUo7gvYml1MeAeZEbsyPCa0RLZX6es",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3000/api/users",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "aee30fac-fe31-446f-6e04-a223601d65b1",
+			"data": null,
+			"dataMode": "params",
+			"name": "http://localhost:3000/api/users",
+			"description": "Request with AuthHeader set with Bearer",
+			"descriptionFormat": "html",
+			"time": 1510173425456,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "4bb22d96-eeca-225f-6c96-64ef5bf58691"
+		},
+		{
+			"id": "ae43d660-e6c2-7a4d-237c-72044218ac4c",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:3000/api/auth/token",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "aee30fac-fe31-446f-6e04-a223601d65b1",
+			"data": [
+				{
+					"key": "email",
+					"value": "god@god.com",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "god",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"name": "http://localhost:3000/api/auth/token",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1510173654001,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "4bb22d96-eeca-225f-6c96-64ef5bf58691"
+		}
+	]
+}

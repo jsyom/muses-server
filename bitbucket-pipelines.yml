@@ -1,0 +1,60 @@
+# This is a sample build configuration for JavaScript.
+# Check our guides at https://confluence.atlassian.com/x/14UWN for more examples.
+# Only use spaces to indent your .yml configuration.
+# -----
+# You can specify a custom docker image from Docker Hub as your build environment.
+
+image: node:7.10.0
+
+pipelines:
+  default:
+    - step:
+        name: Default Build and test
+        caches:
+          - node
+        script: # Modify the commands below to build your repository.
+          - npm install
+          - npm test
+          - npm run lint
+
+  branches:
+      master:
+        - step:
+            name: Master build & test
+            image: node:7.10.0
+            script:
+              # PACKAGE INSTALLATIONS
+              - echo 'master branch triggerd'
+              - npm install
+              - npm test # AUTO VERSIONING
+              - npm run lint
+
+      staging:
+        - step:
+            name: Staging build & test
+            script:
+              - echo 'staging branch triggerd'
+              - npm install
+              - npm test
+              - npm run lint
+              # - npm run dist # when dev server is ready
+
+      production:
+        - step:
+            name: Production build & test
+            script:
+              - echo 'production branch triggerd'
+              - npm install
+              - npm test
+              - npm run lint
+              # - npm run dist # when dev server is ready
+
+      feature/*:
+        - step:
+            name: Feature build & test
+            caches:
+              - node
+            script:
+              - npm install
+              - npm test
+              - npm run lint
